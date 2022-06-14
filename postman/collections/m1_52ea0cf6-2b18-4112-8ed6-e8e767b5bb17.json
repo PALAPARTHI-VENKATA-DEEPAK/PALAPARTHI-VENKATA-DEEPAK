@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "1984f0a5-9136-4e24-ab29-31d1265a0ee4",
+		"name": "m1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f220623b-8906-47d8-adfb-fd18b04892a1",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "e2227846-fa30-4b7e-a845-6159325afe3d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.mocky.io/v2/5ecfd5dc3200006200e3d64b",
+					"protocol": "http",
+					"host": [
+						"www",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v2",
+						"5ecfd5dc3200006200e3d64b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f220623b-8906-47d8-adfb-fd18b04892a1",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "eff14563-e23b-44ef-8d94-cd1905475cdc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.mocky.io/v2/5ecfd630320000f1aee3d64d",
+					"protocol": "http",
+					"host": [
+						"www",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v2",
+						"5ecfd630320000f1aee3d64d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8011aa26-ce54-4559-bec6-3f35352e65a1",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ef05a985-30ec-44d4-bff1-276c3098b647",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.mocky.io/v2/5ecfd6473200009dc1e3d64e",
+					"protocol": "http",
+					"host": [
+						"www",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v2",
+						"5ecfd6473200009dc1e3d64e"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d27bc78a-7904-4300-8955-e508aa36470e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "28cc2676-097e-4a9a-b312-6eeb1ee46394",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "d518d56b-5d71-4860-ade6-8dd5e7ce3132",
+			"key": "baseUrl",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}
